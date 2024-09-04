@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="insta.css">
     <title>Instagram</title>
 </head>
 <body>
+    <!-- 프로필 -->
         <div>
             <img src="../image/instagramlogo.png" alt="" width="150px">
             <input type="search" placeholder="검색">
         </div>
 
-        <div>
-            <img src="../image/cat.jpg" alt="" width="50px">
-        <!-- <br>태그는 줄바꿈 기능이 있다. -->
-        <!-- <p>태그는 문단을 나누는 태그 
-            paragraph의 약자이다.-->
-        <!-- <p>태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
-            옆에 글이 올 수 없다. -->
-            <div>
-                <h2>half_bottle</h2>
-                <button>프로필 편집</button>
-        <!-- 회색 버튼이 생긴다.
-            css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 
-            수정할 수 있다.
-        -->
+        <div id="profile">
+            <div class="profile_pic">
+                <img src="../image/cat.jpg" alt="" class="circle_pic" id="profile-cat">
             </div>
+            <!-- <br>태그는 줄바꿈 기능이 있다. -->
+            <!-- <p>태그는 문단을 나누는 태그 
+                paragraph의 약자이다.-->
+                <!-- <p>태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
+                    옆에 글이 올 수 없다. -->
+                    <div>
+                        <!-- 회색 버튼이 생긴다.
+                        css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 
+                        수정할 수 있다.
+                        -->
+                        <h2>half_bottle</h2>
+                        <button>프로필 편집</button>
+                    </div>
         </div>
 
     <div> 
@@ -40,10 +44,12 @@
         <a href="https://needleworm.github.io">needleworm.github.io> </a>
 
     </div>
-
+    <!-- 하이라이트 -->
     <div>
         <div class="highlight">
-        <img src="../image/cat1.jpg" alt="" height="35px">
+            <div class="highlight_pic">
+                <img src="../image/cat1.jpg" alt=""  class="circle_pic">
+            </div>  
         </div>
 
         <div>
@@ -52,7 +58,9 @@
         </div>
 
         <div class="highlight">
-        <img src="../image/cat2.jpg" alt="" height="35px">
+            <div class="highlight_pic">
+                <img src="../image/cat2.jpg" alt=""  class="circle_pic">
+            </div>
         </div>
 
         <div>
@@ -60,41 +68,45 @@
         </div>
     </div>
     
-    <div>
-        <div>
+    <div id="stat_bar">
+        <div class="stat">
         게시물<br>
         133
         </div>
 
-        <div>
+        <div class="stat">
         팔로워</br>
         408
         </div>
 
-        <div>
+        <div class="stat">
         팔로우</br>
         189
         </div>  
-       
-        </p>
     </div>
     
     <div>icon이 들어갈 자리</div>
 
-    <div>
-        <!-- 퍼센트(%)로 지정된 값은 화면 크기에 따라 그 값이 유동적으로 바뀔 수도 있기 때문이다.
-        이처럼 창 크기의 변화에 맞춰 그때그때 화면의 정보나 사진의 크기가 함께 바뀌는 웹 페이지를 반응형 웹이라고 한다.
-        모든 웹 페이지 외주 제작에서 반응형 웹이 가장 비싼 가격으로 거래되고 있다.
-        왜냐하면 가장 수요가 높고, 가장 만들기 어렵기 때문이다. -->
-        <img src="../image/bookimage/book1.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book2.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book3.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book4.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book5.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book6.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book7.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book8.jpg" alt="" width="32%">
-        <img src="../image/bookimage/book9.jpg" alt="" width="32%">
+    <!-- 퍼센트(%)로 지정된 값은 화면 크기에 따라 그 값이 유동적으로 바뀔 수도 있기 때문이다.
+    이처럼 창 크기의 변화에 맞춰 그때그때 화면의 정보나 사진의 크기가 함께 바뀌는 웹 페이지를 반응형 웹이라고 한다.
+    모든 웹 페이지 외주 제작에서 반응형 웹이 가장 비싼 가격으로 거래되고 있다.
+    왜냐하면 가장 수요가 높고, 가장 만들기 어렵기 때문이다. -->
+    <div class>
+        <div class="thumbnail_grid">
+            <img src="../image/bookimage/book1.jpg" alt="" class="thumbnail">
+            <img src="../image/bookimage/book2.jpg" alt="" class="thumbnail">
+            <img src="../image/bookimage/book3.jpg" alt="" class="thumbnail">
+         </div>  
+         <div class="thumbnail_grid">
+            <img src="../image/bookimage/book4.jpg" alt="" class="thumbnail">
+            <img src="../image/bookimage/book5.jpg" alt="" class="thumbnail">
+            <img src="../image/bookimage/book6.jpg" alt="" class="thumbnail">
+        </div>
+        <div class="thumbnail_grid">
+            <img src="../image/bookimage/book7.jpg" alt="" class="thumbnail">
+            <img src="../image/bookimage/book8.jpg" alt="" class="thumbnail">
+            <img src="../image/bookimage/book9.jpg" alt="" class="thumbnail">
+        </div>
     </div>
 
 
