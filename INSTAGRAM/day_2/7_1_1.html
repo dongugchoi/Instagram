@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* 모든 h1태그에 적용 */
+    /* h1{color:red;} */
+
+    /* header id값을 가진 태그 밑에 있는 모든 h1태그 */
+    /* #header h1{color : red;} */
+
+    /* header id값을 가진 태그 바로 밑에있는 h1태그만 적용 */
+    p>img{
+        /* p태그를 먼저 탐색하고 그 하위에 있는
+        img태그를 탐색하여 스타일을 적용함 */
+       border: 5px solid red;
+    }
+
+    #header>h1{
+        color: blue;
+    }
+    #contents h1{
+        color: blue;
+    }
+
+    h1{
+        color: red;
+    }
+
+     
+</style>
+
+<body>
+
+    <div id="header">
+
+        <h1>나는 header의 자식</h1> <!--직계자식-->
+
+        <div id="nav">
+            <h1>navigation</h1>
+        </div>
+        
+        <div id="nav2">
+            <h1>navigation</h1>
+        </div>
+    </div>
+
+        <div id="contents">
+            <h1>contents의 자식</h1>
+        </div>
+
+
+        
+    <p>
+        <img src="../image/cat1.jpg" alt="" width="300px">
+    </p>
+    <img src="../image/cat2.jpg" alt="" width="300px">
+</body>
+</html>
