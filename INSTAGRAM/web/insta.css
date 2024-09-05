@@ -2,18 +2,43 @@ h2{
     color : red;
 }
 
+#top{
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid gray 0.1px;
+}
+
+#top_img{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+}
+
+#top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* 클래스 선택자를 사용할때는 (.)클래스명 */
 .highlight{
-    border: solid;
-    border-color: #ddd;
+    text-align: center;
+}
+
+#id{
+    font-size: 18px;
+    font-weight: 100;
 }
 
 /* ID 선택자를 사용할때는 #클래스명 */
 #profile{
-    border: solid;
-    border-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
 }
-
+/* ---썸네일--- */
 .thumbnail_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,7 +47,9 @@ h2{
 .thumbnail{
     width: 100%;
 }
+/* ------------ */
 
+/* 게시물,팔로워,팔로우 */
 #stat_bar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,7 +62,9 @@ h2{
     margin-bottom: 5px;
     text-align: center;
 }
+/* ------------ */
 
+/* 사진동그랗게만들기 */
 .circle_pic{
     border: solid white 1px;
     border-radius: 50%;
@@ -47,9 +76,79 @@ h2{
 .highlight_pic{
     height: 35px;
     width: 35px;
+
+    margin: 0 auto;
 }
 
 #profile-pic{
     height: 50px;
     width: 50px;
+}
+/* ------------- */
+
+#highlight_area{
+    display: grid;
+    grid-template-columns: 45px 45px 1fr;
+    
+}
+
+#profile_info{
+    display: grid;
+    grid-template-rows : 1fr 1fr;
+    height: 50px
+}
+
+button{
+    height: 80%;
+    width: 95;
+    font-size: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+#top_input{
+    height: 60%;
+    width: 95%;
+
+    margin : auto;
+    text-align: center;
+    height: 25px;
+    background-color: rgb(250,250,250);
+    border: solid gray;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 100;
+
+}
+
+i{
+    color: gray;
+    cursor: pointer;
+}
+
+i:hover{
+    color: black;
+}
+
+#top i{
+    font-size: 14px
+}
+
+#top div{
+    text-align: center;
+    padding-top: 6px;
+}
+
+#sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;    
+}
+
+.selected{
+    border-bottom: solid gray 3px;
 }

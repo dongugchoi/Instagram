@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="insta.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <title>Instagram</title>
+
 </head>
 <body>
-    <!-- 프로필 -->
-        <div>
-            <img src="../image/instagramlogo.png" alt="" width="150px">
-            <input type="search" placeholder="검색">
+    <!-- 로고 및 상단버튼 -->
+        <div id="top">
+            <div id="top_img">
+                <img src="../image/instagramlogo.png" alt="" width="150px" id="top img" >
+            </div>
+
+            
+            <input type="search" placeholder="🔍검색" id="top_input">
+           <div>
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+           </div>
         </div>
 
+        <!-- 프로필 -->
         <div id="profile">
             <div id="profile-pic">
                 <img src="../image/cat.jpg" alt="" class="circle_pic">
@@ -22,16 +35,16 @@
                 paragraph의 약자이다.-->
                 <!-- <p>태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
                     옆에 글이 올 수 없다. -->
-                    <div>
-                        <!-- 회색 버튼이 생긴다.
-                        css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 
-                        수정할 수 있다.
-                        -->
-                        <h2>half_bottle</h2>
-                        <button>프로필 편집</button>
-                    </div>
+            <div id="profile_info">
+                <!-- 회색 버튼이 생긴다.
+                css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 
+                수정할 수 있다.
+                -->
+                <div id="id">half_bottle <i class="fas fa-cog"></i></fa-cog></div>
+                <button>프로필 편집</button>
+            </div>
         </div>
-
+        <!-- 프로필 끝-->
     <div> 
         <p>
         <!-- <strong> 볼드체 표현 -->
@@ -45,27 +58,33 @@
 
     </div>
     <!-- 하이라이트 -->
-    <div>
+    <div id="highlight_area">
         <div class="highlight">
             <div class="highlight_pic">
                 <img src="../image/cat1.jpg" alt=""  class="circle_pic">
             </div>  
+            
+            <div>
+                <!-- window + ;-->
+                😂 
+            </div>
         </div>
 
-        <div>
-            <!-- window + ;-->
-             😂 
-        </div>
+        
 
         <div class="highlight">
             <div class="highlight_pic">
                 <img src="../image/cat2.jpg" alt=""  class="circle_pic">
             </div>
+            <div>
+                👍
+            </div>
         </div>
 
         <div>
-            👍
+            
         </div>
+
     </div>
     
     <div id="stat_bar">
@@ -85,7 +104,27 @@
         </div>  
     </div>
     
-    <div>icon이 들어갈 자리</div>
+    <div id="sub_icons">
+        <div class="selected">
+            <i class="fas fa-border-all"></i>
+        </div>
+
+        <div>
+            <i class="fas fa-film"></i>
+        </div>
+
+        <div>
+            <i class="fas fa-play-circle"></i>
+        </div>
+
+        <div>
+            <i class="fas fa-bookmark"></i>
+        </div>
+
+        <div>
+            <i class="fas fa-user-tag"></i>
+        </div>
+    </div>
 
     <!-- 퍼센트(%)로 지정된 값은 화면 크기에 따라 그 값이 유동적으로 바뀔 수도 있기 때문이다.
     이처럼 창 크기의 변화에 맞춰 그때그때 화면의 정보나 사진의 크기가 함께 바뀌는 웹 페이지를 반응형 웹이라고 한다.
