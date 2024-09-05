@@ -5,15 +5,16 @@ h2{
 #top{
     display: grid;
     grid-template-columns: 4fr 7fr 4fr;
-    height: 30px;
-    margin-bottom: 20px;
+    height: 10vw;
+    margin-bottom: 3vw;
     padding-bottom: 10px;
     border-bottom: solid gray 0.1px;
+    min-height: 10vw;
 }
 
 #top_img{
-    width: 100px;
-    height: 30px;
+    width: 20vw;
+    height: 10vw;
     margin: auto;
 }
 
@@ -29,7 +30,7 @@ h2{
 }
 
 #id{
-    font-size: 18px;
+    font-size: 6vw;
     font-weight: 100;
 }
 
@@ -74,28 +75,28 @@ h2{
 }
 
 .highlight_pic{
-    height: 35px;
-    width: 35px;
+    height: 10vw;
+    width: 10vw;
 
     margin: 0 auto;
 }
 
 #profile-pic{
-    height: 50px;
-    width: 50px;
+    height: 15vw;
+    width: 15vw;
 }
 /* ------------- */
 
 #highlight_area{
     display: grid;
-    grid-template-columns: 45px 45px 1fr;
+    grid-template-columns: 12vw 12vw 1fr;
     
 }
 
 #profile_info{
     display: grid;
     grid-template-rows : 1fr 1fr;
-    height: 50px
+    height: 15vw;
 }
 
 button{
@@ -113,11 +114,11 @@ button{
 
     margin : auto;
     text-align: center;
-    height: 25px;
+    height: 10vw;
     background-color: rgb(250,250,250);
     border: solid gray;
     border-radius: 3px;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: 100;
 
 }
@@ -132,23 +133,32 @@ i:hover{
 }
 
 #top i{
-    font-size: 14px
+    font-size: 4vw;
 }
 
 #top div{
     text-align: center;
-    padding-top: 6px;
+    padding-top: 1vw;
 }
 
 #sub_icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 15px;
+    font-size: 2vw;
     text-align: center;
-    height: 30px;
-    margin-top: 10px;    
+    height: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  
 }
 
-.selected{
+
+
+.selected:hover{
+    cursor: pointer;
     border-bottom: solid gray 3px;
+}
+
+body{
+    font-size: 3vw;
 }
