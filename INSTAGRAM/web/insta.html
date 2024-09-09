@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="insta.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="insta.js" defer></script>
     <title>Instagram</title>
 
 </head>
@@ -27,7 +28,7 @@
 
         <!-- 프로필 -->
         <div id="profile">
-            <div id="profile-pic">
+            <div id="profile_pic">
                 <img src="../image/cat.jpg" alt="" class="circle_pic">
             </div>
             <!-- <br>태그는 줄바꿈 기능이 있다. -->
@@ -35,26 +36,31 @@
                 paragraph의 약자이다.-->
                 <!-- <p>태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
                     옆에 글이 올 수 없다. -->
+                    <!-- 회색 버튼이 생긴다.
+                    css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 
+                    수정할 수 있다.
+                    -->
             <div id="profile_info">
-                <!-- 회색 버튼이 생긴다.
-                css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 
-                수정할 수 있다.
-                -->
-                <div id="id">half_bottle <i class="fas fa-cog"></i></fa-cog></div>
-                <button>프로필 편집</button>
+                <div id="id">
+                    <span>half_bottle </span>
+                    <i class="fas fa-cog"></i>
+                </div>
+                    <button style="cursor: pointer;">프로필 편집</button>
             </div>
         </div>
         <!-- 프로필 끝-->
     <div> 
         <p>
-        <!-- <strong> 볼드체 표현 -->
-        <strong>
-        반병현(Byunghyun Ban)
-        </strong>
-        작가
+            <!-- <strong> 볼드체 표현 -->
+            <strong id="userInfo">
+            반병현(Byunghyun Ban)
+            </strong>
+            <span id="summary">작가</span>
         </p>
 
-        <a href="https://needleworm.github.io">needleworm.github.io> </a>
+        <p id="profileDetail">
+            <a href="https://needleworm.github.io">needleworm.github.io> </a>
+        </p>
 
     </div>
     <!-- 하이라이트 -->
