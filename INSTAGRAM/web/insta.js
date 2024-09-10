@@ -1,3 +1,5 @@
+//document : 웹 문서를 지칭하는 자바스크립트 객체
+//"DOMContentLoaded" : HTML코드가 다 로딩될 때  이벤트를 발생
 document.addEventListener("DOMContentLoaded",function(e){
 
     let configID = document.querySelector("#id i");
